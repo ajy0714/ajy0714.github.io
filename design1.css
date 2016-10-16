@@ -2,4 +2,5 @@ header{background-image:url(background.png); margin:50px; padding:30px;}
 blogName{font-size:30pt;font-weight:bold}
 nav{display:block;width:150px;float:left;margin:30px}
 nav a{display:block;padding:10px;}
-aside{display:block;float:right;margin:5px;width:20%}
+aside{display:block;float:right;margin:5px;width:20%;position:static}
+#article{table-layout:auto;font-size:10pt}

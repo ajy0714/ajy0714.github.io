@@ -25,24 +25,53 @@
 	</nav>
 
 	<article>
-	<form method = "post" action="form_app.js">
-	활동 일시 : <input type="tel" placeholder="20XX-XX-XX"
-                          pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" /><br> <!date 타입을 쓰고 싶었지만, 파이어폭스와 인터넷 익스플로러에서 작동하지 않아서, tel 형식을 빌렸습니다.>
+		<form method = "post" action="form_app.js">
+		<table border="0" id="article">
+	
+			<tr>
+				<td><pre>활동 일시 : </pre></td>	
+				<td><input type="tel" placeholder="20XX-XX-XX" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" /><br></td> <!date 타입을 쓰고 싶었지만, 파이어폭스와 인터넷 익스플로러에서 작동하지 않아서, tel 형식을 빌렸습니다.>
+			<tr>
+	
+			<tr>
+				<td><pre>분    류 : </td>
+				<td>
+					<select name="column" size="1">
+					<option value="C">C언어</option>
+					<option value="algorithm">알고리즘</option>
+					<option value="web_programming">웹 프로그래밍</option>
+					<option value="Linux">리눅스</option>
+					<option value="drone">드론</option>
+					<option value="open_soruce">오픈 소스</option></select></pre>
+				</td>
+			<tr>
 
-	분   류 : <select name="column" size="1">
-			<option value="C">C언어</option>
-			<option value="algorithm">알고리즘</option>
-			<option value="web_programming">웹 프로그래밍</option>
-			<option value="Linux">리눅스</option>
-			<option value="drone">드론</option>
-			<option value="open_soruce">오픈 소스</option></select>
+			<tr>
+				<td><pre>내    용 : </td>
+				<td><textarea name="main_text" cols="80" rows="10"></textarea></pre></td>
+			</tr>
 
+			<tr>
+				<td><pre>첨부파일 : </pre></td>
+				<td><input type="file" name="add_file"/><br></td>
+			</tr>
+			
+			<tr>
+				<td><pre>비밀번호 : </pre></td>
+				<td><input type="password" name="modify_password"/></td>
+			<tr>
 
-	<pre>내   용 : <textarea name="main_text" cols="80" rows="10"></textarea></pre>
-	첨부파일 : <input type="file" name="add_file"/><br>
-	비밀번호 : <input type="password" name="modify_password"/><br><br>
-	</article>
+			<tr align="right" valign="bottom">
+				<colspan="2">
+				<td>				
+				<input type="submit" value="작성">&nbsp&nbsp
+				<input type="reset" value="취소">
+				</td>
+			</tr>
+		</table>
 
+	</article><br>
+	
 	<aside>
 		<a href="https://github.com/ajy0714" title="안준영의 Github로 연결됩니다.">
 		<img src="github" width="50px" height="50px"></a>
@@ -50,13 +79,6 @@
 		<img src="facebook.png" width="50px" height="50px"></a>	
 	</aside>
 
-	
-	<footer>
-		<input type="submit" value="작성">&nbsp&nbsp
-		<input type="reset" value="취소">
-	</footer>
-
 </body>
-
 
 </html>
