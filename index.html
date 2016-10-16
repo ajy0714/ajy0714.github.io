@@ -12,9 +12,7 @@
 
 <body>
 	<header>
-		<div>
 			<h1>안준영의 입으로 하는 프로그래밍</h1>
-		</div>
 	</header>
 
 	<nav>
@@ -26,10 +24,11 @@
 		<a>6. 오픈 소스</a>
 	</nav>
 
+	<article>
 	<form method = "post" action="form_app.js">
 	활동 일시 : <input type="tel" placeholder="20XX-XX-XX"
                           pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" /><br> <!date 타입을 쓰고 싶었지만, 파이어폭스와 인터넷 익스플로러에서 작동하지 않아서, tel 형식을 빌렸습니다.>
-	<pre>
+
 	분   류 : <select name="column" size="1">
 			<option value="C">C언어</option>
 			<option value="algorithm">알고리즘</option>
@@ -37,19 +36,25 @@
 			<option value="Linux">리눅스</option>
 			<option value="drone">드론</option>
 			<option value="open_soruce">오픈 소스</option></select>
-	</pre>
+
 
 	<pre>내   용 : <textarea name="main_text" cols="80" rows="10"></textarea></pre>
 	첨부파일 : <input type="file" name="add_file"/><br>
 	비밀번호 : <input type="password" name="modify_password"/><br><br>
-	<input type="submit" value="작성">&nbsp&nbsp
-	<input type="reset" value="취소">
+	</article>
 
-	<a href="https://github.com/ajy0714" title="안준영의 Github로 연결됩니다.">
-	<img src="github" width="50px" height="50px"></a>
-	<a href="https://www.facebook.com/ajy0714" title="안준영의 Facebook 페이지로 연결됩니다.">
-	<img src="facebook.png" width="50px" height="50px"></a>
+	<aside>
+		<a href="https://github.com/ajy0714" title="안준영의 Github로 연결됩니다.">
+		<img src="github" width="50px" height="50px"></a>
+		<a href="https://www.facebook.com/ajy0714" title="안준영의 Facebook 페이지로 연결됩니다.">
+		<img src="facebook.png" width="50px" height="50px"></a>	
+	</aside>
+
 	
+	<footer>
+		<input type="submit" value="작성">&nbsp&nbsp
+		<input type="reset" value="취소">
+	</footer>
 
 </body>
 
