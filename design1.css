@@ -4,4 +4,4 @@ nav{display:block;width:150px;float:left;margin:30px;padding-right:30px}
 nav a{font-family:"맑은 고딕","굴림";font-size:12pt;display:block;padding:15px;}
 #table{table-layout:auto;font-size:10pt;padding-top:20px}
 article{position:absolute; left:230px}
-footer{position:absolute; bottom:100px}
+footer{position:fixed; bottom:5%; right:5%}
