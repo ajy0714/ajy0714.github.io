@@ -1,6 +1,7 @@
-header{background-image:url(drone.jpg); background-position:0% 35%;margin:50px; padding:30px;width:1500px}
-#blogName{color:#FFCC00;font-size:30pt;font-weight:bold}
-
-nav{display:block;width:150px;float:right;margin:30px;padding-right:30px}
+header{background-image:url(drone.jpg); margin:50px; padding:30px;width:1000px;position:center}
+blogName{font-size:30pt;font-weight:bold}
+nav{display:block;width:150px;float:right;margin:30px;position:absolute;right:10%}
 nav a{font-family:"맑은 고딕","굴림";font-size:12pt;display:block;padding:15px;}
-#article{table-layout:auto;font-size:10pt;padding-top:20px;}
+#table{table-layout:auto;font-size:10pt;padding-top:20px}
+article{position:absolute; left:10%}
+footer{display:block;position:absolute; bottom:40px; left:40px}
