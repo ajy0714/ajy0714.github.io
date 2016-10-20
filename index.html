@@ -10,6 +10,7 @@
 </head>
 
 <body>
+	<div id="viewport">
 	<header>
 			<h1 id="blogName">안준영의 말로 하는 프로그래밍</h1>
 	</header>
@@ -27,34 +28,37 @@
 			<tr>
 				<td>
 					<a href="https://github.com/ajy0714" title="안준영의 Github로 연결됩니다.">
-					<img src="github" width="50px" height="50px"></a>
+					<img src="github" width="35px" height="35px"></a>
 				</td>
 				<td>
 					<a href="https://www.facebook.com/ajy0714" title="안준영의 Facebook 페이지로 연결됩니다.">
-					<img src="facebook.png" width="45px" height="45px"></a>
+					<img src="facebook.png" width="30px" height="30px"></a>
 				</td>
 			</tr>
 			</table>
 		</a>
 	</nav>
 
+
 	<article>
 		<form method = "post" action="form_app.js">
 		<table border="0" id="table">
 			<tr>
 				<td><pre>활동 일시 : </pre></td>	
-				<td><input type="tel" placeholder="20XX-XX-XX" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" /><br></td> <!--date 타입을 쓰고 싶었지만, 파이어폭스와 인터넷 익스플로러에서 작동하지 않아서, tel 형식을 빌렸습니다.-->	</tr>
+				<td><input type="tel" placeholder="20XX-XX-XX" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" /></td> <!--date 타입을 쓰고 싶었지만, 파이어폭스와 인터넷 익스플로러에서 작동하지 않아서, tel 형식을 빌렸습니다.-->
+			</tr>
 	
 			<tr>
 				<td><pre>분    류 : </pre></td>
 				<td>
 					<select name="column" size="1">
-					<option value="C">C언어</option>
-					<option value="algorithm">알고리즘</option>
-					<option value="web_programming">웹 프로그래밍</option>
-					<option value="Linux">리눅스</option>
-					<option value="drone">드론</option>
-					<option value="open_soruce">오픈 소스</option></select>
+						<option value="C">C언어</option>
+						<option value="algorithm">알고리즘</option>
+						<option value="web_programming">웹 프로그래밍</option>
+						<option value="Linux">리눅스</option>
+						<option value="drone">드론</option>
+						<option value="open_soruce">오픈 소스</option>
+					</select>
 				</td>
 			</tr>
 
@@ -65,7 +69,7 @@
 
 			<tr>
 				<td><pre>첨부파일 : </pre></td>
-				<td><input type="file" name="add_file"/><br></td>
+				<td><input type="file" name="add_file"/></td>
 			</tr>
 			
 			<tr>
@@ -79,7 +83,8 @@
 			</tr>
 		</table>
 		</form>
-	</article><br>
+	</article>
+	</div>
 
 	<footer><!--It works PC version browsers but doesn't work at mobile Chrome. I searched about it but I can't resolve it. Some of Android developers said it's an error since Android 4.4.
 		  So I added another icon at nav menu. It can be resolved by 'request desktop view'.-->
