@@ -12,78 +12,42 @@
 <body>
 	<div id="viewport">
 	<header>
-			<h1 id="blogName">안준영의 말로 하는 프로그래밍</h1>
+			<h1>안준영의 말로 하는 프로그래밍</h1>
 	</header>
 
-	<nav><!--추후에 하이퍼링크 달아서 각 메뉴를 누를 때마다 내용이 바뀌도록 할 것. iframe을 써야할 듯-->
-		<a>글 작성하기</a>
-		<a>1. C언어</a>
-		<a>2. 알고리즘</a>
-		<a>3. 웹 프로그래밍</a>
-		<a>4. 리눅스</a>
-		<a>5. 드론</a>
-		<a>6. 오픈 소스</a>
-		<a>
-			<table border="0">
-			<tr>
-				<td>
-					<a href="https://github.com/ajy0714" title="안준영의 Github로 연결됩니다.">
-					<img src="github" width="35px" height="35px"></a>
-				</td>
-				<td>
-					<a href="https://www.facebook.com/ajy0714" title="안준영의 Facebook 페이지로 연결됩니다.">
-					<img src="facebook.png" width="30px" height="30px"></a>
-				</td>
-			</tr>
-			</table>
-		</a>
-	</nav>
-
+	<aside>
+		<div class="write_article"><a href="write_article.html" target="article">글 작성하기</a></div>
+		<nav><!--추후에 하이퍼링크 달아서 각 메뉴를 누를 때마다 내용이 바뀌도록 할 것. iframe을 써야할 듯-->
+			<a>1. C언어</a>
+			<a>2. 알고리즘</a>
+			<a>3. 웹 프로그래밍</a>
+			<a>4. 리눅스</a>
+			<a>5. 드론</a>
+			<a>6. 오픈 소스</a>
+			<a>
+				<table border="0">
+					<tr>
+						<td>
+							<a href="https://github.com/ajy0714" title="안준영의 Github로 연결됩니다.">
+							<img src="github" width="35px" height="35px"></a>
+						</td>
+						<td>
+							<a href="https://www.facebook.com/ajy0714" title="안준영의 Facebook 페이지로 연결됩니다.">	
+							<img src="facebook.png" width="30px" height="30px"></a>
+						</td>
+				</tr>
+				</table>
+			</a>
+		</nav>
+	</aside>
 
 	<article>
-		<form method = "post" action="form_app.js">
-		<table border="0" id="table">
-			<tr>
-				<td><pre>활동 일시 : </pre></td>	
-				<td><input type="tel" placeholder="20XX-XX-XX" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" /></td> <!--date 타입을 쓰고 싶었지만, 파이어폭스와 인터넷 익스플로러에서 작동하지 않아서, tel 형식을 빌렸습니다.-->
-			</tr>
-	
-			<tr>
-				<td><pre>분    류 : </pre></td>
-				<td>
-					<select name="column" size="1">
-						<option value="C">C언어</option>
-						<option value="algorithm">알고리즘</option>
-						<option value="web_programming">웹 프로그래밍</option>
-						<option value="Linux">리눅스</option>
-						<option value="drone">드론</option>
-						<option value="open_soruce">오픈 소스</option>
-					</select>
-				</td>
-			</tr>
-
-			<tr>
-				<td><pre>내    용 : </pre></td>
-				<td><textarea name="main_text" cols="60" rows="10"></textarea></td>
-			</tr>
-
-			<tr>
-				<td><pre>첨부파일 : </pre></td>
-				<td><input type="file" name="add_file"/></td>
-			</tr>
-			
-			<tr>
-				<td><pre>비밀번호 : </pre></td>
-				<td><input type="password" name="modify_password"/></td>
-			</tr>
-
-			<tr>
-				<td></td>
-				<td align="right"><input type="submit" value="작성">&nbsp;&nbsp;<input type="reset" value="취소"></td>
-			</tr>
-		</table>
-		</form>
+		<iframe src="" name="article" width="1000px" height="1000px" frameborder=0></iframe>
 	</article>
+
+
+
+
 	</div>
 
 	<footer><!--It works PC version browsers but doesn't work at mobile Chrome. I searched about it but I can't resolve it. Some of Android developers said it's an error since Android 4.4.

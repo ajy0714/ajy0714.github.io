@@ -1,15 +1,20 @@
-header{background-image:url(background.png);background-position:(center center); padding:30px;width:93%;border:4px solid blue}
+#viewport{margin:0 auto;width:1600px;height:1920px;border-style:solid}
 
-#blogName{font-weight:bold}
+header{background-image:url(background.png);background-position:(center center); padding:30px;margin-bottom:50px;border:4px solid blue}
 
-nav{display:block;float:left;width:15%;padding-right:30px;margin:10px;border:solid red}
+aside{height:1710px;border:solid purple;float:left;}
+.write_article{text-align:center;vertical-align:middle;width:150px;margin:0 auto;font-size:20pt;margin-top:30px;border-style:solid}
 
-nav a{font-family:"맑은 고딕","굴림";font-size:100%;display:block;padding:15px;border-style:solid}
 
-#table{table-layout:auto;font-size:100%;padding-top:20px}
+nav{display:block;margin-top:10px;margin-right:50px;margin-left:25px;width:200px;border:solid red}
+nav a{font-family:"맑은 고딕","굴림";display:block;padding:15px;border-style:solid}
 
-article{left:15%;border:solid orange;}
+
+article{border:solid orange;}
+.table{table-layout:auto;}
+
 
 footer{position:fixed; bottom:5%; right:5%}
 
-#viewport{margin:0 auto;max-width:80%;height:1920px;border-style:solid}
+a:link{text-decoration:none;color:black;}
+a:visted{text-decoration:none;color:green;}
